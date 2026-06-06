@@ -280,5 +280,24 @@
     </div>
 
     <script src="script.js"></script>
+
+ <script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 123) {
+    e.preventDefault(); // F12
+  }
+
+  if (e.ctrlKey && e.shiftKey &&
+     (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) {
+    e.preventDefault();
+  }
+
+  if (e.ctrlKey && e.keyCode == 85) {
+    e.preventDefault(); // Ctrl+U
+  }
+});
+</script>
   </body>
 </html>
