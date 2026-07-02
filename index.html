@@ -1,303 +1,402 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Krishan Kant Karadia | Frontend & Mobile Developer</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <div class="glow glow-one"></div>
-      <div class="glow glow-two"></div>
-      <div class="glow glow-three"></div>
 
-      <nav class="nav">
-        <div class="container nav-inner">
-          <a href="#" class="brand">&lt;Krishan.Dev /&gt;</a>
-          <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#timeline">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#terminal">Console</a>
-            <a href="#contact">Contact</a>
-          </div>
-          <a href="#contact" class="mobile-cta">Hire Me</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishan Kant Karadia | Frontend & Mobile Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page-shell">
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+    <div class="glow glow-three"></div>
+
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a href="#" class="brand">&lt;Krishankant.Dev /&gt;</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#timeline">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#terminal">Console</a>
+          <a href="#contact">Contact</a>
         </div>
-      </nav>
+        <a href="#contact" class="mobile-cta">Hire Me</a>
+      </div>
+    </nav>
 
-      <main>
-        <section id="about" class="container hero">
-          <div class="hero-copy">
-            <div class="status-pill">
+    <main>
+      <section id="about" class="container hero">
+        <div class="hero-copy">
+          <div class="status-pill">
+            <span></span>
+            Available for Live Projects & Engineering Roles
+          </div>
+          <h1>Hi, I'm <strong>Krishan Kant Karadia</strong></h1>
+          <div class="typing-line"><span id="typedText"></span><span class="cursor">|</span></div>
+          <p>
+            Detail-oriented Developer with 2.5+ years of hands-on experience building responsive web apps
+            and scalable cross-platform mobile ecosystems. Specialized in React.js, Next.js, and React Native CLI.
+          </p>
+
+          <!-- <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <button type="button" class="btn btn-secondary" id="printBtn">
+              <span data-icon="download"></span>
+              Save Offline PDF
+            </button>
+          </div> -->
+
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+
+            <button type="button" class="btn btn-secondary" id="printBtn">
+              <span data-icon="download2"></span>
+              My Resume PDF
+            </button>
+          </div>
+
+          <script>
+            document.getElementById('printBtn').addEventListener('click', function () {
+              const link = document.createElement('a');
+              link.href = 'krishankant5-26.pdf';
+              link.download2 = 'krishankant5-26.pdf';
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            });
+          </script>
+
+
+          <div class="social-row">
+            <span>Connect:</span>
+            <a href="https://www.linkedin.com/in/krishankant-karadia-5a64a323a/" target="_blank"
+              rel="noopener noreferrer" aria-label="LinkedIn">
+              <span data-icon="linkedin"></span>
+            </a>
+            <a href="https://www.behance.net/krishankaradia" target="_blank" rel="noopener noreferrer"
+              aria-label="Behance">
+              <span data-icon="behance"></span>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <span data-icon="github"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="code-window">
+          <div class="window-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <small>DeveloperEnvironment.js</small>
+          </div>
+          <div class="code-body">
+            <p><b>const</b> <i>developer</i> = {</p>
+            <p class="indent">name: <em>"Krishan Kant Karadia"</em>,</p>
+            <p class="indent">yearsOfExp: <mark>2.5+</mark>,</p>
+            <p class="indent">focusArea: <em>"Frontend & Mobile Apps"</em>,</p>
+            <p class="indent">coreTechStack: [</p>
+            <p class="indent2">"React.js", "Next.js", "React Native",</p>
+            <p class="indent2">"TailwindCSS", "SCSS", "REST APIs"</p>
+            <p class="indent">],</p>
+            <p class="indent muted">// Driven by clean modular code patterns & pixel perfection</p>
+            <p class="indent">codingEthos: <em>"Optimized Performance"</em></p>
+            <p>};</p>
+            <div class="code-divider"></div>
+            <p class="green">// Output diagnostics</p>
+            <p class="muted">System metrics: <span class="green">99/100 Lighthouse performance</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="band">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Engineering Expertise</h2>
+            <p>Structured categorization of tools, frameworks, and modern workflows I leverage to ship lightning fast
+              applications.</p>
+          </div>
+          <div class="skill-grid">
+            <article class="panel">
+              <div class="icon-box"><span data-icon="code"></span></div>
+              <h3>Frontend Architecture</h3>
+              <ul>
+                <li>React.js / Next.js / Vite</li>
+                <li>HTML5 / CSS3 / SCSS</li>
+                <li>Modern ES6 JavaScript</li>
+                <li>jQuery / State Management</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <div class="icon-box"><span data-icon="layers"></span></div>
+              <h3>Styling & UI/UX</h3>
+              <ul>
+                <li>Tailwind CSS Utility Design</li>
+                <li>Bootstrap 5.3 layouts</li>
+                <li>Fluid Responsive Layouts</li>
+                <li>Interactive CSS Animations</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <div class="icon-box"><span data-icon="smartphone"></span></div>
+              <h3>Mobile Applications</h3>
+              <ul>
+                <li>React Native CLI Developer</li>
+                <li>Cross-Platform Ecosystems</li>
+                <li>State Syncing & Storage</li>
+                <li>Device Specific Compilations</li>
+              </ul>
+            </article>
+            <article class="panel">
+              <div class="icon-box"><span data-icon="database"></span></div>
+              <h3>Backend Basics & Tools</h3>
+              <ul>
+                <li>Node.js / Express.js basics</li>
+                <li>MongoDB / MySQL databases</li>
+                <li>Git / GitHub Command Lines</li>
+                <li>Adobe Photoshop / Photoshop GUI</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline" class="container section">
+        <div class="section-heading">
+          <h2>Professional Timeline</h2>
+          <p>Chronological breakdown of my contribution as a developer in dynamic modern environments.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item active">
+            <div>
+              <h3>Buzzonic Ventures</h3>
+              <span>2026 (3 Months)</span>
+            </div>
+            <h4>Frontend & Mobile Developer</h4>
+            <p>Implemented robust form handling, real-time database operations, user data validations, and secure REST
+              API integrations. Engineered scalable UI components utilizing Tailwind CSS, Bootstrap 5.3, and lightweight
+              jQuery configurations to increase performance metrics.</p>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>Appinop Technologies</h3><span>2025 - 2026 (1 Month)</span>
+            </div>
+            <h4>Frontend Developer</h4>
+            <p>Maintained dynamic deployment code bases. Engineered modular, highly responsive layouts and streamlined
+              analytics dashboards designed around customer accessibility principles.</p>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>Pam Fincap Pvt. Ltd.</h3><span>2024 - 2025</span>
+            </div>
+            <h4>Frontend & PHP Developer</h4>
+            <p>Led modular developments on commercial PHP financial tools. Integrated advanced logic components,
+              customized admin dashboard capabilities, and optimized relational database inputs to drive process
+              efficiency.</p>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>Martonline Pvt. Ltd.</h3><span>2023 - 2024</span>
+            </div>
+            <h4>React Developer</h4>
+            <p>Constructed high-speed front-end components for standard e-commerce networks. Engineered customized
+              multi-stage React.js states, integrated REST API components, and optimized content loading speeds to keep
+              users engaged.</p>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>Banno Technologies, Noida</h3><span>Feb 2024 - Aug 2024</span>
+            </div>
+            <h4>Frontend Developer</h4>
+            <p>Spearheaded UI redesigns using robust HTML, CSS, and modular JS. Improved system response benchmarks
+              while cooperating with cross-departmental product developers.</p>
+          </article>
+          <article class="timeline-item">
+            <div>
+              <h3>925 Silver Palace (Gemstone Jewellery)</h3><span>2020 - 2021</span>
+            </div>
+            <h4>CMS Manager & Web Developer</h4>
+            <p>Handled custom adjustments of high scale gemstone CMS architectures. Formulated search engine compliance
+              algorithms and created landing elements to match target design guidelines.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="band">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Live Production Showcase</h2>
+            <p>Interactive filterable grid containing actual working systems, live applications, and corporate platforms
+              built and deployed.</p>
+          </div>
+
+          <div class="filters" role="group" aria-label="Project filters">
+            <button class="filter-btn active" data-filter="all">All Systems</button>
+            <button class="filter-btn" data-filter="react">React.js Applications</button>
+            <button class="filter-btn" data-filter="web">Web Platforms</button>
+            <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+          </div>
+
+          <div id="projectGrid" class="project-grid"></div>
+        </div>
+      </section>
+
+      <section id="terminal" class="container terminal-section">
+        <div class="section-heading">
+          <h2>Developer Interactive Shell</h2>
+          <p>Query my background parameters programmatically via custom command outputs.</p>
+        </div>
+        <div class="terminal-window">
+          <div class="window-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <small><span data-icon="terminal"></span> guest@krishandev-sh: ~</small>
+            <div class="bar-spacer"></div>
+          </div>
+          <div id="terminalOutput" class="terminal-output">
+            <p class="muted">// Welcome! Type "help" to list valid directives.</p>
+          </div>
+          <form id="terminalForm" class="terminal-form">
+            <span>guest@krishandev-sh:~$</span>
+            <input id="terminalInput" type="text" placeholder="skills, experience, contact..." autocomplete="off" />
+            <button type="submit">RUN</button>
+          </form>
+        </div>
+      </section>
+
+
+      <section id="contact" class="band contact-band">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <h2>Get In Touch</h2>
+            <p>Let's discuss modern cross-platform options, responsive web layouts, or optimization procedures. I'm
+              available for technical interviews and contract projects.</p>
+            <div class="contact-list">
+              <article>
+                <span data-icon="mail"></span>
+                <div><strong>Email</strong><a
+                    href="mailto:krishankantkaradia8@gmail.com">krishankantkaradia8@gmail.com</a></div>
+              </article>
+              <article>
+                <span data-icon="map-pin"></span>
+                <div><strong>Location</strong>
+                  <p>Jaipur, Rajasthan (302015)</p>
+                </div>
+              </article>
+              <article>
+                <span data-icon="phone"></span>
+                <div><strong>Direct Reach</strong>
+                  <p>+91 7791059175</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h3>Send Message</h3>
+            <div id="contactSuccess" class="success-message" hidden>
               <span></span>
-              Available for Live Projects & Engineering Roles
+              Success! Your simulated message was dispatched correctly. Thank you for connecting!
             </div>
-            <h1>Hi, I'm <strong>Krishan Kant</strong></h1>
-            <div class="typing-line"><span id="typedText"></span><span class="cursor">|</span></div>
-            <p>
-              Detail-oriented Developer with 2.5+ years of hands-on experience building responsive web apps
-              and scalable cross-platform mobile ecosystems. Specialized in React.js, Next.js, and React Native CLI.
-            </p>
+            <form id="contactForm">
+              <label>
+                Full Name
+                <input name="name" type="text" placeholder="Krishan Kant Karadia" required />
+              </label>
 
-            <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary">View My Work</a>
-              <button type="button" class="btn btn-secondary" id="printBtn">
-                <span data-icon="download"></span>
-                Save Offline PDF
-              </button>
-            </div>
+              <label>
+                Email Address
+                <input name="email" type="email" placeholder="name@company.com" required />
+              </label>
 
-            <div class="social-row">
-              <span>Connect:</span>
-              <a href="https://www.linkedin.com/in/krishankant-karadia-5a64a323a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <span data-icon="linkedin"></span>
-              </a>
-              <a href="https://www.behance.net/krishankaradia" target="_blank" rel="noopener noreferrer" aria-label="Behance">
-                <span data-icon="behance"></span>
-              </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <span data-icon="github"></span>
-              </a>
-            </div>
-          </div>
+              <style>
+                .contact-row {
+                  display: flex;
+                  gap: 1rem;
+                }
 
-          <div class="code-window">
-            <div class="window-bar">
-              <div class="dots"><span></span><span></span><span></span></div>
-              <small>DeveloperEnvironment.js</small>
-            </div>
-            <div class="code-body">
-              <p><b>const</b> <i>developer</i> = {</p>
-              <p class="indent">name: <em>"Krishan Kant Karadia"</em>,</p>
-              <p class="indent">yearsOfExp: <mark>2.5+</mark>,</p>
-              <p class="indent">focusArea: <em>"Frontend & Mobile Apps"</em>,</p>
-              <p class="indent">coreTechStack: [</p>
-              <p class="indent2">"React.js", "Next.js", "React Native",</p>
-              <p class="indent2">"TailwindCSS", "SCSS", "REST APIs"</p>
-              <p class="indent">],</p>
-              <p class="indent muted">// Driven by clean modular code patterns & pixel perfection</p>
-              <p class="indent">codingEthos: <em>"Optimized Performance"</em></p>
-              <p>};</p>
-              <div class="code-divider"></div>
-              <p class="green">// Output diagnostics</p>
-              <p class="muted">System metrics: <span class="green">99/100 Lighthouse performance</span></p>
-            </div>
-          </div>
-        </section>
+                .contact-row label {
+                  flex: 1;
+                }
+              </style>
+              <div class="contact-row">
+                <label>
+                  Phone Number
+                  <input name="phone" type="tel" placeholder="+91 00000 00000" required />
+                </label>
 
-        <section id="skills" class="band">
-          <div class="container">
-            <div class="section-heading">
-              <h2>Engineering Expertise</h2>
-              <p>Structured categorization of tools, frameworks, and modern workflows I leverage to ship lightning fast applications.</p>
-            </div>
-            <div class="skill-grid">
-              <article class="panel">
-                <div class="icon-box"><span data-icon="code"></span></div>
-                <h3>Frontend Architecture</h3>
-                <ul>
-                  <li>React.js / Next.js / Vite</li>
-                  <li>HTML5 / CSS3 / SCSS</li>
-                  <li>Modern ES6 JavaScript</li>
-                  <li>jQuery / State Management</li>
-                </ul>
-              </article>
-              <article class="panel">
-                <div class="icon-box"><span data-icon="layers"></span></div>
-                <h3>Styling & UI/UX</h3>
-                <ul>
-                  <li>Tailwind CSS Utility Design</li>
-                  <li>Bootstrap 5.3 layouts</li>
-                  <li>Fluid Responsive Layouts</li>
-                  <li>Interactive CSS Animations</li>
-                </ul>
-              </article>
-              <article class="panel">
-                <div class="icon-box"><span data-icon="smartphone"></span></div>
-                <h3>Mobile Applications</h3>
-                <ul>
-                  <li>React Native CLI Developer</li>
-                  <li>Cross-Platform Ecosystems</li>
-                  <li>State Syncing & Storage</li>
-                  <li>Device Specific Compilations</li>
-                </ul>
-              </article>
-              <article class="panel">
-                <div class="icon-box"><span data-icon="database"></span></div>
-                <h3>Backend Basics & Tools</h3>
-                <ul>
-                  <li>Node.js / Express.js basics</li>
-                  <li>MongoDB / MySQL databases</li>
-                  <li>Git / GitHub Command Lines</li>
-                  <li>Adobe Photoshop / Photoshop GUI</li>
-                </ul>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="timeline" class="container section">
-          <div class="section-heading">
-            <h2>Professional Timeline</h2>
-            <p>Chronological breakdown of my contribution as a developer in dynamic modern environments.</p>
-          </div>
-          <div class="timeline">
-            <article class="timeline-item active">
-              <div>
-                <h3>Buzzonic Ventures</h3>
-                <span>2026 (3 Months)</span>
+                <label>
+                  Subject
+                  <input name="subject" type="text" placeholder="Subject" required />
+                </label>
               </div>
-              <h4>Frontend & Mobile Developer</h4>
-              <p>Implemented robust form handling, real-time database operations, user data validations, and secure REST API integrations. Engineered scalable UI components utilizing Tailwind CSS, Bootstrap 5.3, and lightweight jQuery configurations to increase performance metrics.</p>
-            </article>
-            <article class="timeline-item">
-              <div><h3>Appinop Technologies</h3><span>2025 - 2026 (1 Month)</span></div>
-              <h4>Frontend Developer</h4>
-              <p>Maintained dynamic deployment code bases. Engineered modular, highly responsive layouts and streamlined analytics dashboards designed around customer accessibility principles.</p>
-            </article>
-            <article class="timeline-item">
-              <div><h3>Pam Fincap Pvt. Ltd.</h3><span>2024 - 2025</span></div>
-              <h4>Frontend & PHP Developer</h4>
-              <p>Led modular developments on commercial PHP financial tools. Integrated advanced logic components, customized admin dashboard capabilities, and optimized relational database inputs to drive process efficiency.</p>
-            </article>
-            <article class="timeline-item">
-              <div><h3>Martonline Pvt. Ltd.</h3><span>2023 - 2024</span></div>
-              <h4>React Developer</h4>
-              <p>Constructed high-speed front-end components for standard e-commerce networks. Engineered customized multi-stage React.js states, integrated REST API components, and optimized content loading speeds to keep users engaged.</p>
-            </article>
-            <article class="timeline-item">
-              <div><h3>Banno Technologies, Noida</h3><span>Feb 2024 - Aug 2024</span></div>
-              <h4>Frontend Developer</h4>
-              <p>Spearheaded UI redesigns using robust HTML, CSS, and modular JS. Improved system response benchmarks while cooperating with cross-departmental product developers.</p>
-            </article>
-            <article class="timeline-item">
-              <div><h3>925 Silver Palace (Gemstone Jewellery)</h3><span>2020 - 2021</span></div>
-              <h4>CMS Manager & Web Developer</h4>
-              <p>Handled custom adjustments of high scale gemstone CMS architectures. Formulated search engine compliance algorithms and created landing elements to match target design guidelines.</p>
-            </article>
-          </div>
-        </section>
 
-        <section id="projects" class="band">
-          <div class="container">
-            <div class="section-heading">
-              <h2>Live Production Showcase</h2>
-              <p>Interactive filterable grid containing actual working systems, live applications, and corporate platforms built and deployed.</p>
-            </div>
+              <label>
+                Message Body
+                <textarea name="message" rows="4" placeholder="Hello Krishan, we would love to collaborate..."
+                  required></textarea>
+              </label>
 
-            <div class="filters" role="group" aria-label="Project filters">
-              <button class="filter-btn active" data-filter="all">All Systems</button>
-              <button class="filter-btn" data-filter="react">React.js Applications</button>
-              <button class="filter-btn" data-filter="web">Web Platforms</button>
-              <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-            </div>
-
-            <div id="projectGrid" class="project-grid"></div>
-          </div>
-        </section>
-
-        <section id="terminal" class="container terminal-section">
-          <div class="section-heading">
-            <h2>Developer Interactive Shell</h2>
-            <p>Query my background parameters programmatically via custom command outputs.</p>
-          </div>
-          <div class="terminal-window">
-            <div class="window-bar">
-              <div class="dots"><span></span><span></span><span></span></div>
-              <small><span data-icon="terminal"></span> guest@krishandev-sh: ~</small>
-              <div class="bar-spacer"></div>
-            </div>
-            <div id="terminalOutput" class="terminal-output">
-              <p class="muted">// Welcome! Type "help" to list valid directives.</p>
-            </div>
-            <form id="terminalForm" class="terminal-form">
-              <span>guest@krishandev-sh:~$</span>
-              <input id="terminalInput" type="text" placeholder="skills, experience, contact..." autocomplete="off" />
-              <button type="submit">RUN</button>
+              <button type="submit">Send Message Envelope</button>
             </form>
-          </div>
-        </section>
 
-        <section id="contact" class="band contact-band">
-          <div class="container contact-grid">
-            <div class="contact-copy">
-              <h2>Get In Touch</h2>
-              <p>Let's discuss modern cross-platform options, responsive web layouts, or optimization procedures. I'm available for technical interviews and contract projects.</p>
-              <div class="contact-list">
-                <article>
-                  <span data-icon="mail"></span>
-                  <div><strong>Email</strong><a href="mailto:krishankantkaradia8@gmail.com">krishankantkaradia8@gmail.com</a></div>
-                </article>
-                <article>
-                  <span data-icon="map-pin"></span>
-                  <div><strong>Location</strong><p>Jaipur, Rajasthan (302015)</p></div>
-                </article>
-                <article>
-                  <span data-icon="phone"></span>
-                  <div><strong>Direct Reach</strong><p>+91 7791059175</p></div>
-                </article>
-              </div>
-            </div>
-
-            <div class="contact-card">
-              <h3>Send Message</h3>
-              <div id="contactSuccess" class="success-message" hidden>
-                <span></span>
-                Success! Your simulated message was dispatched correctly. Thank you for connecting!
-              </div>
-              <form id="contactForm">
-                <label>
-                  Full Name
-                  <input name="name" type="text" placeholder="Krishan Kant Karadia" required />
-                </label>
-                <label>
-                  Email Address
-                  <input name="email" type="email" placeholder="name@company.com" required />
-                </label>
-                <label>
-                  Message Body
-                  <textarea name="message" rows="4" placeholder="Hello Krishan, we would love to collaborate..." required></textarea>
-                </label>
-                <button type="submit">Send Message Envelope</button>
-              </form>
-            </div>
           </div>
-        </section>
-      </main>
 
-      <footer class="footer">
-        <div class="container footer-inner">
-          <p>© 2026 Krishan Kant Karadia. Engineered with HTML, CSS & JavaScript.</p>
-          <div>
-            <a href="https://www.linkedin.com/in/krishankant-karadia-5a64a323a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://www.behance.net/krishankaradia" target="_blank" rel="noopener noreferrer">Behance</a>
-            <a href="#">Back to Top</a>
-          </div>
+
         </div>
-      </footer>
-    </div>
+      </section>
+    </main>
 
-    <script src="script.js"></script>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 Krishan Kant Karadia. Engineered with HTML, CSS & JavaScript.</p>
+        <div>
+          <a href="https://www.linkedin.com/in/krishankant-karadia-5a64a323a/" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.behance.net/krishankaradia" target="_blank" rel="noopener noreferrer">Behance</a>
+          <a href="#">Back to Top</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 
- <!-- <script>
-document.addEventListener('contextmenu', e => e.preventDefault());
+  <script src="script.js"></script>
+</body>
 
-document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 123) {
-    e.preventDefault(); // F12
-  }
 
-  if (e.ctrlKey && e.shiftKey &&
-     (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) {
-    e.preventDefault();
-  }
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-  if (e.ctrlKey && e.keyCode == 85) {
-    e.preventDefault(); // Ctrl+U
-  }
-});
-</script> -->
-  </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    emailjs.init({
+      publicKey: "Khg2mOJUqxu3gM4xt"
+    });
+
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm(
+        "service_cy8vfj4",
+        "template_c05w8n2",
+        this
+      )
+        .then(function () {
+          alert("Message Sent Successfully!");
+          form.reset();
+        })
+        .catch(function (error) {
+          console.error("FAILED...", error);
+          alert("Error: " + error.text);
+        });
+    });
+
+  });
+</script>
+
 </html>
